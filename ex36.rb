@@ -25,11 +25,11 @@
     puts "Are you thinking about marketing or perhaps PR?"
 
     print "> "
-    choice = $stdin.gets.chomp
+    choice = $stdin.gets.chomp.downcase
 
     if choice == "marketing"
       dead("C'mon man! You gotta know you don't have the money for this.")
-    elsif choice == "pr" || "PR"
+    elsif choice == "pr"
       puts "Boom! Your blog post goes viral and you suddenly reach 10,000,0000,0000 downloads! Time to go public!"
       ipo_room
     else
